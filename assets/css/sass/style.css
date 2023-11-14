@@ -521,11 +521,13 @@ body {
   html.touch *:hover {
     pointer-events: none !important;
   }
-  html, body {
+  html,
+  body {
     width: 100% !important;
     margin: 0px !important;
     overflow-x: hidden !important;
-    -webkit-text-size-adjust: none; /* Prevent font scaling in landscape */
+    -webkit-text-size-adjust: none;
+    /* Prevent font scaling in landscape */
   }
   body {
     margin: 0 0 20px;
@@ -543,6 +545,10 @@ body {
 /*------FOOTER-----*/
 #footer {
   width: 100%;
+}
+
+.employee-card {
+  display: flex;
 }
 
 .ourstory {
