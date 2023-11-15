@@ -31,6 +31,10 @@ p {
 
 }
 
+h4 {
+	margin: 0px;
+}
+
 body {
 	width: 90%;
 	overflow-x: hidden;
@@ -96,4 +100,25 @@ body {
 
 .team-image {
 	padding-bottom: 12px;
+}
+
+.employee-card {
+	display: flex;
+	flex-direction: column;
+
+}
+
+.ourstory {
+	padding: 12px;
+}
+
+.info-company {
+	display: block;
+	text-align: center;
+	align-items: center;
+	width: 100%;
+}
+
+.space {
+	padding-bottom: 15px;
 }

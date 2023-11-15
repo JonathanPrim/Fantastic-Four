@@ -285,7 +285,6 @@ a:hover, a:active, a:visited {
 }
 @media screen and (max-width: 1190px) {
   #header nav#menu ul li.icon {
-    float: right;
     display: inline-block !important;
     position: absolute;
     right: 5%;
@@ -513,6 +512,10 @@ p {
   margin: 2px;
 }
 
+h4 {
+  margin: 0px;
+}
+
 body {
   width: 90%;
   overflow-x: hidden;
@@ -570,6 +573,26 @@ body {
 
 .team-image {
   padding-bottom: 12px;
+}
+
+.employee-card {
+  display: flex;
+  flex-direction: column;
+}
+
+.ourstory {
+  padding: 12px;
+}
+
+.info-company {
+  display: block;
+  text-align: center;
+  align-items: center;
+  width: 100%;
+}
+
+.space {
+  padding-bottom: 15px;
 }
 
 /*# sourceMappingURL=style.css.map */
