@@ -118,6 +118,7 @@ body {
 	text-align: center;
 	align-items: center;
 	width: 100%;
+	padding: 12px;
 }
 
 @media screen and (min-width: 1024px) {
@@ -147,4 +148,8 @@ body {
 	flex-direction: row;
 	justify-content: space-between;
 	text-align: end;
+}
+
+.header-img {
+	border: 1px solid;
 }
