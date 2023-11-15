@@ -503,6 +503,15 @@ html {
   border-top: 2px solid #16315e;
 }
 
+img {
+  padding-bottom: 12px;
+  padding-top: 12px;
+}
+
+p {
+  margin: 2px;
+}
+
 body {
   width: 90%;
   overflow-x: hidden;
@@ -545,6 +554,21 @@ body {
 /*------FOOTER-----*/
 #footer {
   width: 100%;
+}
+
+.employee-card-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+.meet-the-team {
+  margin: 12px 16px;
+}
+
+.team-image {
+  padding-bottom: 12px;
 }
 
 .employee-card {
