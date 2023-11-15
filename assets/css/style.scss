@@ -14,25 +14,10 @@ Version: 1.0
 @import "articles.scss";
 /*Articles SASS file*/
 
-
 html {
 	width: 100%;
 	margin: 0;
 	border-top: 2px solid $link-hover;
-}
-
-img {
-	padding-bottom: 12px;
-	padding-top: 12px;
-}
-
-p {
-	margin: 2px;
-
-}
-
-h4 {
-	margin: 0px;
 }
 
 body {
@@ -46,6 +31,10 @@ body {
 	font-family: $primary-font;
 	font-size: 13pt;
 	color: black;
+}
+
+img {
+	padding-bottom: 12px;
 }
 
 @media screen and (max-width : 1024px) {
@@ -79,8 +68,6 @@ body {
 	overflow: hidden;
 }
 
-
-
 /*------FOOTER-----*/
 
 #footer {
@@ -89,36 +76,8 @@ body {
 
 .employee-card-container {
 	display: flex;
-	flex-wrap: wrap;
+	flex-direction: row;
 	justify-content: space-between;
 	align-items: flex-start;
-}
-
-.meet-the-team {
-	margin: 12px 16px;
-}
-
-.team-image {
-	padding-bottom: 12px;
-}
-
-.employee-card {
-	display: flex;
-	flex-direction: column;
-
-}
-
-.ourstory {
-	padding: 12px;
-}
-
-.info-company {
-	display: block;
-	text-align: center;
-	align-items: center;
-	width: 100%;
-}
-
-.space {
-	padding-bottom: 15px;
+	padding: 12px 16px;
 }
