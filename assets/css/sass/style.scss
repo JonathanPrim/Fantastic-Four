@@ -31,6 +31,10 @@ p {
 
 }
 
+h4 {
+	margin: 0px;
+}
+
 body {
 	width: 90%;
 	overflow-x: hidden;
@@ -100,14 +104,16 @@ body {
 
 .employee-card {
 	display: flex;
+	flex-direction: column;
 
 }
+
 .ourstory {
 	padding: 12px;
 }
 
 .info-company {
-	display: block; 
+	display: block;
 	text-align: center;
 	align-items: center;
 	width: 100%;

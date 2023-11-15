@@ -512,6 +512,10 @@ p {
   margin: 2px;
 }
 
+h4 {
+  margin: 0px;
+}
+
 body {
   width: 90%;
   overflow-x: hidden;
@@ -573,6 +577,7 @@ body {
 
 .employee-card {
   display: flex;
+  flex-direction: column;
 }
 
 .ourstory {
