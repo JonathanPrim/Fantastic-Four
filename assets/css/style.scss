@@ -33,6 +33,10 @@ body {
 	color: black;
 }
 
+img {
+	padding-bottom: 12px;
+}
+
 @media screen and (max-width : 1024px) {
 
 	/*All Devices*/
@@ -69,7 +73,6 @@ body {
 #footer {
 	width: 100%;
 }
-
 
 .employee-card-container {
 	display: flex;
