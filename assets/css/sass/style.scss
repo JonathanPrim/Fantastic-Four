@@ -118,12 +118,14 @@ body {
 	text-align: center;
 	align-items: center;
 	width: 100%;
+	padding: 12px;
 }
 
 @media screen and (min-width: 1024px) {
 	.info-company {
 		flex-direction: row;
 		justify-content: space-between;
+		text-align: left;
 	}
 }
 
@@ -147,4 +149,8 @@ body {
 	flex-direction: row;
 	justify-content: space-between;
 	text-align: end;
+}
+
+.header-img {
+	border: 1px solid;
 }
