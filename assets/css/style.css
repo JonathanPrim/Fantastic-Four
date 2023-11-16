@@ -285,7 +285,6 @@ a:hover, a:active, a:visited {
 }
 @media screen and (max-width: 1190px) {
   #header nav#menu ul li.icon {
-    float: right;
     display: inline-block !important;
     position: absolute;
     right: 5%;
@@ -504,6 +503,19 @@ html {
   border-top: 2px solid #16315e;
 }
 
+img {
+  padding-bottom: 12px;
+  padding-top: 12px;
+}
+
+p {
+  margin: 2px;
+}
+
+h4 {
+  margin: 0px;
+}
+
 body {
   width: 90%;
   overflow-x: hidden;
@@ -522,11 +534,13 @@ body {
   html.touch *:hover {
     pointer-events: none !important;
   }
-  html, body {
+  html,
+  body {
     width: 100% !important;
     margin: 0px !important;
     overflow-x: hidden !important;
-    -webkit-text-size-adjust: none; /* Prevent font scaling in landscape */
+    -webkit-text-size-adjust: none;
+    /* Prevent font scaling in landscape */
   }
   body {
     margin: 0 0 20px;
@@ -544,6 +558,45 @@ body {
 /*------FOOTER-----*/
 #footer {
   width: 100%;
+}
+
+.employee-card-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+.meet-the-team {
+  margin: 12px 16px;
+}
+
+.team-image {
+  padding-bottom: 12px;
+}
+
+.employee-card {
+  display: flex;
+  flex-direction: column;
+}
+
+.ourstory {
+  padding: 12px;
+}
+
+.info-company {
+  display: block;
+  text-align: center;
+  align-items: center;
+  width: 100%;
+}
+
+.space {
+  padding-bottom: 15px;
+}
+
+.footer-heading {
+  font-size: 12px;
 }
 
 /*# sourceMappingURL=style.css.map */
