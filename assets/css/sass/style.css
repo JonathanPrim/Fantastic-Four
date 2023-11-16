@@ -299,7 +299,7 @@ a:hover, a:active, a:visited {
 }
 @media (max-width: 870px) {
   #header nav#menu ul li.icon {
-    top: 15px;
+    top: 40px;
   }
 }
 
@@ -520,7 +520,7 @@ h4 {
 }
 
 body {
-  width: 90%;
+  width: 100%;
   overflow-x: hidden;
   display: block;
   clear: both;
@@ -622,10 +622,6 @@ body {
   flex-direction: row;
   justify-content: space-between;
   text-align: end;
-}
-
-.header-img {
-  border: 1px solid;
 }
 
 /*# sourceMappingURL=style.css.map */
