@@ -624,10 +624,6 @@ body {
   text-align: end;
 }
 
-.header-img {
-  border: 1px solid;
-}
-
 /* CSS for Image of Modern Building */
 .modern-building {
   width: 100%; /* Set the width to 100% for responsiveness */
