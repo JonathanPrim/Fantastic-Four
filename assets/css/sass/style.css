@@ -283,6 +283,9 @@ a:hover, a:active, a:visited {
   -o-transition: 0.3s;
   transition: 0.3s;
 }
+#header nav#menu ul li.search input#searchInput.hittepa input#searchInput {
+  background-image: url("/../searchicon.png");
+}
 @media screen and (max-width: 1190px) {
   #header nav#menu ul li.icon {
     display: inline-block !important;
@@ -589,7 +592,6 @@ body {
   flex-direction: column;
   text-align: center;
   align-items: center;
-  width: 100%;
   padding: 12px;
 }
 
