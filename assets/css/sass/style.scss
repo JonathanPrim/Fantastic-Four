@@ -158,7 +158,7 @@ body {
 /* CSS for Image of Modern Building */
 .modern-building {
 	width: 100%;
-	max-width: 800;
+	max-width: 1000px; /* Specify the maximum width with units */
 	height: auto;
 	margin: 0 auto; /* Center the image horizontally */
 	padding: 0;
@@ -169,52 +169,42 @@ body {
   @media only screen and (max-width: 600px) {
 	.modern-building {
 	  max-width: none; /* Remove max-width on small screens */
+	  align-items: center;
 	}
   }
   
   /* CSS for info-company */
-.info-company {
+  .info-company {
 	display: flex;
 	flex-direction: column;
-	text-align: center;
 	align-items: center;
+	text-align: center; /* Center-align text within info-company by default */
 	padding: 12px;
 	margin-bottom: 20px; /* Adjust the margin as needed */
   
-	/* Center align on larger screens */
+	/* Media Query for Larger Screens */
 	@media only screen and (min-width: 1024px) {
+	  align-items: flex-start; /* Keep the text in the center but left-aligned on larger screens */
 	  margin: 0 auto; /* Center align the entire section */
 	  max-width: 600px; /* Limit the width for better readability, adjust as needed */
 	}
   }
-
+  
   /* Contact section styles */
   .contact-section {
 	padding: 20px;
-	align-items: center;
-  }
-  
-  .section-title {
-	margin-bottom: 20px;
-	text-align: center; /* Center the section title */
+	text-align: center; /* Center align the contact section content horizontally */
   }
   
   .contact-category {
 	font-weight: bold;
-	text-align: center; /* Align contact categories to the center */
+	text-align: left; /* Left-align contact categories */
   }
   
   .contact-detail {
 	margin: 10px auto; /* Center the contact details horizontally */
-	text-align: left; /* Align contact details to the left */
+	text-align: left; /* Left-align contact details */
 	max-width: 300px; /* Adjust the maximum width based on your design */
-  }
-  
-  /* Media Query for Phones */
-  @media only screen and (max-width: 600px) {
-	.contact-detail {
-	  margin: 20px auto; /* Adjust the margin for smaller screens */
-	}
   }
   
   /* Social icons styles */
