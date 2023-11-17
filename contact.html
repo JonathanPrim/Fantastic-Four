@@ -2,7 +2,7 @@
 <html lang="en" dir="ltr">
   <head>
     <meta charset="utf-8">
-    <title>Google News</title>
+    <title>Contact</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <!--Stylesheets-->
     <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,400i,700|Playfair+Display:400,700" rel="stylesheet">
@@ -14,9 +14,16 @@
       <!--Header-->
       <header id="header" class="header">
         <h1>Google News</h1>
-        <!--Menu-->
+        <!-- Menu -->
         <nav id="menu" class="menu">
           <ul>
+            <li><a href="/Offerings">What we do</a></li>
+            <li><a href="/About-us">Who we are</a></li>
+            <li><a href="/Customers">Customers</a></li>
+            <li><a href="/Careers">Career</a></li>
+            <li><a href="/Investor-relations">IR</a></li>
+            <li><a href="/Latest" class="current">Latest</a></li>
+            <li><a href="/Contact">Contact</a></li>
             <li>
               <a href="/Offerings">What we do</a>
             </li>
@@ -33,10 +40,10 @@
               <a href="/Investor-relations">IR</a>
             </li>
             <li>
-              <a href="/Latest" class="current">Latest</a>
+              <a href="/Latest">Latest</a>
             </li>
             <li>
-              <a href="/Contact">Contact</a>
+              <a href="/Contact" class="current">Contact</a>
             </li>
             <li class="search">
               <input type="text" id="searchInput" onkeyup="searchFunction()" placeholder="Search titles" title="Type in title search term">
@@ -46,48 +53,151 @@
             </li>
           </ul>
         </nav>
-      </header>
+      </div>
+    </header>
 
-      <img src="assets/img/beautiful-modern-building-modern-architecture 1.png" alt="picture of modern building">
-     
-      <h1>Get in Touch</h1>
+  <!-- Image of Modern Building -->
+<img src="assets/img/beautiful-modern-building-modern-mobile-architecture 1.png" alt="Picture of a modern building" class="modern-building">
 
-      <h2>Careers</h2>
-      <p><a href="mailto:job@googlenews.com">job@googlenews.com</a></p>
-      <p><a href="mailto:internship@googlenews.com">internship@googlenews.com</a></p>
-      
-      <h2>General inquiries</h2>
-      <p><a href="mailto:info@googlenews.com">info@googlenews.com</a></p>
-      <p><a href="tel:+8467958596">+846 795 85 96</a></p>
-      
-      <h2>New business</h2>
-      <p>Melissa Humble</p>
-      <p><a href="mailto:melissa.humble@googlenews.com">melissa.humble@googlenews.com</a></p>      
+<!-- Contact Information -->
+<section class="contact-section">
 
-       <!-- Instagram Icon -->
-  <a href="https://www.instagram.com/your_username" target="_blank" title="Instagram">
-    <img src="https://www.example.com/instagram-icon.png" alt="Instagram Icon">
+  <article class="info-company">
+    <h1 class="section-title">Get in Touch</h1>
+  </article>
+
+  <h2 class="contact-category"><b>Careers</b></h2>
+  <p class="contact-detail"><a href="mailto:job@googlenews.com">job@googlenews.com</a></p>
+  <p class="contact-detail"><a href="mailto:internship@googlenews.com">internship@googlenews.com</a></p>
+
+  <h2 class="contact-category"><b>General inquiries</b></h2>
+  <p class="contact-detail"><a href="mailto:info@googlenews.com">info@googlenews.com</a></p>
+  <p class="contact-detail"><a href="tel:+8467958596">+846 795 85 96</a></p>
+
+  <h2 class="contact-category"><b>New business</b></h2>
+  <p class="contact-detail">Melissa Humble</p>
+  <p class="contact-detail"><a href="mailto:melissa.humble@googlenews.com">melissa.humble@googlenews.com</a></p>
+</section>
+
+<!-- Social Icons -->
+<section class="social-icons">
+  <!-- Tumblr Icon -->
+  <a href="https://www.tumblr.com/your_username" target="_blank" title="Tumblr" class="social-icon">
+    <img src="assets/img/tumblr.png" alt="Tumblr Icon">
   </a>
-
   <!-- LinkedIn Icon -->
-  <a href="https://www.linkedin.com/in/your_username" target="_blank" title="LinkedIn">
-    <img src="https://www.example.com/linkedin-icon.png" alt="LinkedIn Icon">
+  <a href="https://www.linkedin.com/in/your_username" target="_blank" title="LinkedIn" class="social-icon">
+    <img src="/assets/img/linkedin.png" alt="LinkedIn Icon">
   </a>
-
   <!-- Facebook Icon -->
-  <a href="https://www.facebook.com/your_page" target="_blank" title="Facebook">
-    <img src="https://www.example.com/facebook-icon.png" alt="Facebook Icon">
+  <a href="https://www.facebook.com/your_page" target="_blank" title="Facebook" class="social-icon">
+    <img src="/assets/img/facebook.png" alt="Facebook Icon">
   </a>
+</section>
+
+<!-- Map Section -->
+<section class="map-section">
+  <h2 class="section-title">Location</h2>
+  <a href="https://www.google.com/maps?q=Your+Location" target="_blank" class="map-link">
+    <img src="assets/img/map.png" alt="Map" class="map-image">
+  </a>
+</section>
 
 
-      <footer>
-        <!--Wather widget-->
-        <script> !function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src='https://weatherwidget.io/js/widget.min.js';fjs.parentNode.insertBefore(js,fjs);}}(document,'script','weatherwidget-io-js');</script>
-        <!--JS Scripts-->
-        <script type="text/javascript" src="./assets/js/menu.js"></script> <!--Mobile menu JS-->
-        <script type="text/javascript" src="./assets/js/request.js"></script> <!--JSON API request JS-->
-
-      </footer>
+    <!-- Meet the Team Section -->
+    <section class="meet-the-team">
+      <h3>Meet the team</h3>
+      <div class="employee-card-container">
+        <!-- Your team member cards here -->
+        <div class="employee-card">
+          <img src="/assets/img/women.png" alt="self portrait of a women with dark hair and glasses">
+          <h4>Melissa Humbles</h4>
+          <p>Ceo</p>
+        </div>
+        <div class="employee-card">
+          <img class="team-image" src="/assets/img/man.png" alt="self portrait of a man with blonde hair">
+          <h4>Clark Gable</h4>
+          <p>Co-Founder</p>
+        </div>
+        <div class="employee-card">
+          <img src="/assets/img/women.png" alt="self portrait of a women with dark hair and glasses">
+          <h4>Melissa Humbles</h4>
+          <p>Ceo</p>
+        </div>
+        <div class="employee-card">
+          <img class="team-image" src="/assets/img/man.png" alt="self portrait of a man with blonde hair">
+          <h4>Clark Gable</h4>
+          <p>Co-Founder</p>
+        </div>
+        <div class="employee-card">
+          <img src="/assets/img/women.png" alt="self portrait of a women with dark hair and glasses">
+          <h4>Melissa Humbles</h4>
+          <p>Ceo</p>
+        </div>
+        <div class="employee-card">
+          <img class="team-image" src="/assets/img/man.png" alt="self portrait of a man with blonde hair">
+          <h4>Clark Gable</h4>
+          <p>Co-Founder</p>
+        </div>
+        <div class="employee-card">
+          <img src="/assets/img/women.png" alt="self portrait of a women with dark hair and glasses">
+          <h4>Melissa Humbles</h4>
+          <p>Ceo</p>
+        </div>
+        <div class="employee-card">
+          <img class="team-image" src="/assets/img/man.png" alt="self portrait of a man with blonde hair">
+          <h4>Clark Gable</h4>
+          <p>Co-Founder</p>
+        </div>
+        <div class="employee-card">
+          <img src="/assets/img/women.png" alt="self portrait of a women with dark hair and glasses">
+          <h4>Melissa Humbles</h4>
+          <p>Ceo</p>
+        </div>
+        <div class="employee-card">
+          <img class="team-image" src="/assets/img/man.png" alt="self portrait of a man with blonde hair">
+          <h4>Clark Gable</h4>
+          <p>Co-Founder</p>
+        </div>
+        <div class="employee-card">
+          <img src="/assets/img/women.png" alt="self portrait of a women with dark hair and glasses">
+          <h4>Melissa Humbles</h4>
+          <p>Ceo</p>
+        </div>
+        <div class="employee-card">
+          <img class="team-image" src="/assets/img/man.png" alt="self portrait of a man with blonde hair">
+          <h4>Clark Gable</h4>
+          <p>Co-Founder</p>
+        </div>
+      </div>
     </section>
-  </body>
+
+    <!-- Footer -->
+    <footer>
+      <article class="footer-container">
+        <div class="footer-content">
+          <h5 class="footer-heading">About us</h5>
+          <p class="footer-text">What we do</p>
+          <p class="footer-text">What we are</p>
+        </div>
+        <div class="footer-content">
+          <h5 class="footer-heading">About you</h5>
+          <p class="footer-text">Customer</p>
+          <p class="footer-text">Latest</p>
+        </div>
+        <div class="footer-content">
+          <h5 class="footer-heading">Address</h5>
+          <p class="footer-text">Google street</p>
+          <p class="footer-text">2, 526 42</p>
+          <p class="footer-text">Googleville</p>
+        </div>
+        <div class="footer-content">
+          <p class="footer-text">Copyright 2022</p>
+          <p class="footer-text">Google News</p>
+        </div>
+      </article>
+    </footer>
+  </section>
+</body>
+
 </html>
