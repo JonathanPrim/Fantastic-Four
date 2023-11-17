@@ -152,22 +152,6 @@ body {
 	}
   }
   
-  /* CSS for info-company */
-.info-company {
-	display: flex;
-	flex-direction: column;
-	text-align: center;
-	align-items: center;
-	padding: 12px;
-	margin-bottom: 20px; /* Adjust the margin as needed */
-  
-	/* Center align on larger screens */
-	@media only screen and (min-width: 1024px) {
-	  margin: 0 auto; /* Center align the entire section */
-	  max-width: 600px; /* Limit the width for better readability, adjust as needed */
-	}
-  }
-
   /* Contact section styles */
   .contact-section {
 	padding: 20px;
