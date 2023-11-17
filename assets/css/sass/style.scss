@@ -152,16 +152,14 @@ body {
 
 
 
-// Contact section styles
-
-
 /* CSS for Image of Modern Building */
 .modern-building {
-	width: 100%; /* Set the width to 100% for responsiveness */
-	max-width: 600px; /* Set a maximum width to avoid stretching on larger screens */
+	width: 100%;
+	max-width: 800;
 	height: auto;
 	margin: 0 auto; /* Center the image horizontally */
 	padding: 0;
+	align-items: center;
   }
   
   /* Media Query for Phones */
@@ -171,10 +169,24 @@ body {
 	}
   }
   
+  /* CSS for info-company */
+.info-company {
+	display: flex;
+	flex-direction: column;
+	text-align: center;
+	align-items: center;
+	padding: 12px;
+	margin-bottom: 20px; /* Adjust the margin as needed */
   
+	/* Center align on larger screens */
+	@media only screen and (min-width: 1024px) {
+	  margin: 0 auto; /* Center align the entire section */
+	  max-width: 600px; /* Limit the width for better readability, adjust as needed */
+	}
+  }
 
-/* Contact section styles */
-.contact-section {
+  /* Contact section styles */
+  .contact-section {
 	padding: 20px;
 	align-items: center;
   }
@@ -186,7 +198,7 @@ body {
   
   .contact-category {
 	font-weight: bold;
-	text-align: left; /* Align contact categories to the left */
+	text-align: center; /* Align contact categories to the center */
   }
   
   .contact-detail {
@@ -202,12 +214,8 @@ body {
 	}
   }
   
-  
-  
-	
-  
-/* Social icons styles */
-.social-icons {
+  /* Social icons styles */
+  .social-icons {
 	display: flex;
 	justify-content: center; /* Center the social icons horizontally */
 	align-items: center; /* Center the social icons vertically */
@@ -230,20 +238,18 @@ body {
 	}
   }
   
-  
-  // Map section styles
+  /* Map section styles */
   .map-section {
 	text-align: center;
-  
-	.section-title {
-	  margin-bottom: 10px;
-	}
-  
-	.map-link {
-	  .map-image {
-		width: 70%;
-		max-width: 400px;
-		height: auto;
-	  }
-	}
   }
+  
+  .section-title {
+	margin-bottom: 10px;
+  }
+  
+  .map-link .map-image {
+	width: 70%;
+	max-width: 400px;
+	height: auto;
+  }
+  

@@ -626,11 +626,12 @@ body {
 
 /* CSS for Image of Modern Building */
 .modern-building {
-  width: 100%; /* Set the width to 100% for responsiveness */
-  max-width: 600px; /* Set a maximum width to avoid stretching on larger screens */
+  width: 100%;
+  max-width: 800;
   height: auto;
   margin: 0 auto; /* Center the image horizontally */
   padding: 0;
+  align-items: center;
 }
 
 /* Media Query for Phones */
@@ -639,6 +640,23 @@ body {
     max-width: none; /* Remove max-width on small screens */
   }
 }
+/* CSS for info-company */
+.info-company {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  align-items: center;
+  padding: 12px;
+  margin-bottom: 20px; /* Adjust the margin as needed */
+  /* Center align on larger screens */
+}
+@media only screen and (min-width: 1024px) {
+  .info-company {
+    margin: 0 auto; /* Center align the entire section */
+    max-width: 600px; /* Limit the width for better readability, adjust as needed */
+  }
+}
+
 /* Contact section styles */
 .contact-section {
   padding: 20px;
@@ -652,7 +670,7 @@ body {
 
 .contact-category {
   font-weight: bold;
-  text-align: left; /* Align contact categories to the left */
+  text-align: center; /* Align contact categories to the center */
 }
 
 .contact-detail {
@@ -690,13 +708,16 @@ body {
     margin: 0 8px; /* Adjust the space between each social icon for smaller screens */
   }
 }
+/* Map section styles */
 .map-section {
   text-align: center;
 }
-.map-section .section-title {
+
+.section-title {
   margin-bottom: 10px;
 }
-.map-section .map-link .map-image {
+
+.map-link .map-image {
   width: 70%;
   max-width: 400px;
   height: auto;
