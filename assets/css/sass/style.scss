@@ -239,6 +239,17 @@ body {
 
 .wrapper {
 	padding: 20px 7.5% 20px 7.5%;
+
+	h4 {
+		padding-bottom: 4px;
+		padding-top: 11px;
+	}
+
+	h3 {
+		margin: 0;
+		padding-top: 50px;
+		padding-bottom: 20px;
+	}
 }
 
 .employee-wrap {
@@ -289,15 +300,4 @@ body {
 	.employee-wrap {
 		gap: 15px;
 	}
-}
-
-.heading-wrapper {
-	margin: 0;
-	padding-top: 50px;
-	padding-bottom: 20px;
-}
-
-.heading-4-wrapper {
-	padding-bottom: 4px;
-	padding-top: 11px;
 }

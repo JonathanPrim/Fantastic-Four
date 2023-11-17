@@ -707,6 +707,15 @@ body {
 .wrapper {
   padding: 20px 7.5% 20px 7.5%;
 }
+.wrapper h4 {
+  padding-bottom: 4px;
+  padding-top: 11px;
+}
+.wrapper h3 {
+  margin: 0;
+  padding-top: 50px;
+  padding-bottom: 20px;
+}
 
 .employee-wrap {
   display: flex;
@@ -752,16 +761,6 @@ body {
   .employee-wrap {
     gap: 15px;
   }
-}
-.heading-wrapper {
-  margin: 0;
-  padding-top: 50px;
-  padding-bottom: 20px;
-}
-
-.heading-4-wrapper {
-  padding-bottom: 4px;
-  padding-top: 11px;
 }
 
 /*# sourceMappingURL=style.css.map */
