@@ -283,9 +283,6 @@ a:hover, a:active, a:visited {
   -o-transition: 0.3s;
   transition: 0.3s;
 }
-#header nav#menu ul li.search input#searchInput.hittepa input#searchInput {
-  background-image: url("/../searchicon.png");
-}
 @media screen and (max-width: 1190px) {
   #header nav#menu ul li.icon {
     display: inline-block !important;
@@ -299,7 +296,7 @@ a:hover, a:active, a:visited {
 }
 @media (max-width: 870px) {
   #header nav#menu ul li.icon {
-    top: 40px;
+    top: 15px;
   }
 }
 
@@ -506,8 +503,13 @@ html {
   border-top: 2px solid #16315e;
 }
 
+img {
+  padding-bottom: 12px;
+  padding-top: 12px;
+}
+
 p {
-  margin: 0px;
+  margin: 2px;
 }
 
 h4 {
@@ -515,7 +517,7 @@ h4 {
 }
 
 body {
-  width: 100%;
+  width: 90%;
   overflow-x: hidden;
   display: block;
   clear: both;
@@ -559,8 +561,7 @@ body {
 }
 
 .ourstory {
-  padding: 50px 7.5% 50px 7.5%;
-  border-bottom: 1px solid #999999;
+  padding: 12px;
 }
 
 .info-company {
@@ -568,37 +569,31 @@ body {
   flex-direction: column;
   text-align: center;
   align-items: center;
-  padding: 20px 7.5% 20px 7.5%;
+  width: 100%;
 }
 
 @media screen and (min-width: 1024px) {
   .info-company {
     flex-direction: row;
     justify-content: space-between;
-    text-align: left;
   }
 }
-/*.team-image {
-	width: calc(50%-15%);
-} */
-/*.space {
-	padding-bottom: 15px;
-}*/
+.space {
+  padding-bottom: 15px;
+}
+
 .footer-heading {
-  text-align: start;
   font-size: 12px;
   margin: 0px 0px 10px 0px;
 }
 
 .footer-text {
-  text-align: start;
   font-size: 8px;
   margin: 0px 0px 2px 0px;
 }
 
 .footer-container {
-  padding: 40px 7.5% 20px 7.5%;
-  border-top: 1px solid #999999;
+  margin: 12px 16px;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
