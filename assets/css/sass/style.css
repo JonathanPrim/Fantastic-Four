@@ -578,13 +578,6 @@ body {
     justify-content: space-between;
   }
 }
-.space {
-  padding-bottom: 15px;
-}
-
-.footer-heading {
-  font-size: 12px;
-  margin: 0px 0px 10px 0px;
 /*.team-image {
 		width: calc(50%-15%);
 	} */
@@ -597,22 +590,12 @@ body {
 	margin: 0px 0px 10px 0px;
 }
 
-
-
 .footer-text {
-  font-size: 8px;
-  margin: 0px 0px 2px 0px;
 	text-align: start;
 	font-size: 10px;
 	margin: 0px 0px 2px 0px;
 }
 
-.footer-container {
-  margin: 12px 16px;
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  text-align: end;
 .footer {
 	padding: 40px 7.5% 20px 7.5%;
 	border-top: 1px solid #999999;
@@ -620,88 +603,6 @@ body {
 	flex-direction: row;
 	justify-content: space-between;
 	text-align: end;
-}
-
-/* CSS for Image of Modern Building */
-.modern-building {
-  width: 100%;
-  max-width: 800;
-  height: auto;
-  margin: 0 auto; /* Center the image horizontally */
-  padding: 0;
-  align-items: center;
-}
-
-/* Media Query for Phones */
-@media only screen and (max-width: 600px) {
-  .modern-building {
-    max-width: none; /* Remove max-width on small screens */
-  }
-}
-/* Contact section styles */
-.contact-section {
-  padding: 20px;
-  align-items: center;
-}
-
-.section-title {
-  margin-bottom: 20px;
-  text-align: center; /* Center the section title */
-}
-
-.contact-category {
-  font-weight: bold;
-  text-align: center; /* Align contact categories to the center */
-}
-
-.contact-detail {
-  margin: 10px auto; /* Center the contact details horizontally */
-  text-align: left; /* Align contact details to the left */
-  max-width: 300px; /* Adjust the maximum width based on your design */
-}
-
-/* Media Query for Phones */
-@media only screen and (max-width: 600px) {
-  .contact-detail {
-    margin: 20px auto; /* Adjust the margin for smaller screens */
-  }
-}
-/* Social icons styles */
-.social-icons {
-  display: flex;
-  justify-content: center; /* Center the social icons horizontally */
-  align-items: center; /* Center the social icons vertically */
-  margin-top: 20px;
-}
-
-/* Individual Social Icon */
-.social-icon {
-  margin: 0 10px; /* Adjust the space between each social icon */
-}
-.social-icon img {
-  width: 30px;
-  height: 30px;
-}
-
-/* Media Query for Phones */
-@media only screen and (max-width: 600px) {
-  .social-icon {
-    margin: 0 8px; /* Adjust the space between each social icon for smaller screens */
-  }
-}
-/* Map section styles */
-.map-section {
-  text-align: center;
-}
-
-.section-title {
-  margin-bottom: 10px;
-}
-
-.map-link .map-image {
-  width: 70%;
-  max-width: 400px;
-  height: auto;
 }
 
 .footer-container {
