@@ -678,6 +678,15 @@ body {
   /* Adjust as needed */
 }
 
+.footer-home-page {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  padding: 40px 1% 20px 1%;
+  background-color: #fff;
+  color: #000;
+}
+
 .footer-container {
   display: flex;
   flex-direction: column;
