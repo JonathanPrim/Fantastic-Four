@@ -88,14 +88,11 @@ img {
 }
 
 .contact-container {
-	display: flex;
-	flex-direction: row;
-	width: 15%;
-}
+	display: inline-block;
+    margin-right: 20px; /* Justera detta värde efter dina önskemål för avstånd mellan elementen */
+  }
 
 .info-company {
-	display: flex;
-	flex-direction: column;
-	justify-content: space-between;
-	align-items: flex-start;
-}
+	display: inline-block;
+    margin-right: 20px; /* Justera detta värde efter dina önskemål för avstånd mellan elementen */
+  }
