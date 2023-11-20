@@ -10,6 +10,7 @@
     rel="stylesheet" />
   <link rel="stylesheet" href="./assets/css/reset.css" type="text/css" />
   <link rel="stylesheet" href="./assets/css/sass/style.css" type="text/css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
 </head>
 
 <body>
@@ -191,31 +192,48 @@
           </article>
         </section>
     </section>
-
-    <footer>
+    <footer class="footer">
       <article class="footer-container">
         <div class="footer-content">
-          <h5 class="footer-heading">About us</h5>
-          <p class="footer-text">What we do</p>
-          <p class="footer-text">What we are</p>
+          <h5 class="footer-heading accordion-trigger">
+            About us
+            <i class="fas fa-chevron-down"></i>
+          </h5>
+          <div class="accordion-content">
+            <p class="footer-text">What we do</p>
+            <p class="footer-text">What we are</p>
+          </div>
         </div>
         <div class="footer-content">
-          <h5 class="footer-heading">About you</h5>
-          <p class="footer-text">Customer</p>
-          <p class="footer-text">Latest</p>
+          <h5 class="footer-heading accordion-trigger">
+            About you
+            <i class="fas fa-chevron-down"></i>
+          </h5>
+          <div class="accordion-content">
+            <p class="footer-text">Customer</p>
+            <p class="footer-text">Latest</p>
+          </div>
         </div>
         <div class="footer-content">
-          <h5 class="footer-heading">Adress</h5>
-          <p class="footer-text">Google street</p>
-          <p class="footer-text">2, 526 42</p>
-          <p class="footer-text">Googleville</p>
+          <h5 class="footer-heading accordion-trigger">
+            Address
+            <i class="fas fa-chevron-down"></i>
+          </h5>
+          <div class="accordion-content">
+            <p class="footer-text">Google street 2</p>
+            <p class="footer-text">526 42</p>
+            <p class="footer-text">Googleville</p>
+          </div>
         </div>
+      </article>
+      <article class="copyright">
         <div class="footer-content">
           <p class="footer-text">Copyright 2022</p>
           <p class="footer-text">Google News</p>
         </div>
       </article>
     </footer>
+    <script src="/assets/js/script.js"></script>
   </section>
 </body>
 
