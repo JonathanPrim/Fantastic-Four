@@ -148,7 +148,7 @@ a:hover, a:active, a:visited {
 /*Fonts SASS file*/
 /*! HEADER STYLES */
 #header {
-  width: 100%;
+  width: 110%;
   height: 130px;
   overflow: hidden;
   background: white;
