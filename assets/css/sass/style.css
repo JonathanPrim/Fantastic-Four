@@ -620,4 +620,12 @@ body {
   text-align: end;
 }
 
+@media screen and (min-width: 1024px) {
+  .company-main {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+}
+
 /*# sourceMappingURL=style.css.map */

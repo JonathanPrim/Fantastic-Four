@@ -99,3 +99,11 @@ img {
   .space {
 	padding-bottom: 15px;
   }
+
+  @media screen and (min-width: 1024px) {
+	.company-main {
+		display: flex;
+		flex-direction: row;
+	}
+  }
+
