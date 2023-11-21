@@ -683,8 +683,8 @@ body {
 /* Social icons styles */
 .social-icons {
   display: flex;
-  justify-content: center; /* Center the social icons horizontally */
-  align-items: center; /* Center the social icons vertically */
+  justify-content: left; /* Center the social icons horizontally */
+  align-items: left; /* Center the social icons vertically */
   margin-top: 20px;
 }
 
@@ -713,8 +713,7 @@ body {
 }
 
 .map-link .map-image {
-  width: 70%;
-  max-width: 400px;
+  width: 100%;
   height: auto;
 }
 
