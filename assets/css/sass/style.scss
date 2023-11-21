@@ -87,6 +87,9 @@ body {
 	width: 100%;
 }
 
+
+
+
 .ourstory {
 	padding: 40px 7.5% 20px 7.5%;
 }
@@ -112,8 +115,8 @@ body {
 // 	} 
 
 .space {
-		padding-bottom: 15px;
-	}
+	padding-bottom: 15px;
+}
 
 /* try accordion feature on mobile */
 .footer-heading {
@@ -143,7 +146,7 @@ body {
 		flex-direction: row;
 		justify-content: space-between;
 	}
-  }
+}
 
 .footer-container {
 	display: flex;
@@ -242,27 +245,65 @@ body {
 	}
 }
 
+@media screen and (min-width:1024px) {
+	.section-title {
+		text-align: left;
+	}
+}
+
+.contact-container {
+	display: flex;
+	flex-direction: row;
+	align-items: self-end;
+	padding-bottom: 10px;
+}
 
 /* Contact section styles */
 .contact-section {
-	padding: 20px;
+	padding: 40px 7.5% 20px 7.5%;
 	text-align: center;
 	/* Center align the contact section content horizontally */
 }
 
+@media screen and (max-width:430px) {
+	.company-main {
+		display: flex;
+		flex-direction: column;
+		align-items: flex-start;
+	}
+
+	.info-contact {
+		display: flex;
+		flex-direction: column;
+		align-items: flex-start;
+	}
+
+}
+
 .contact-category {
+	margin: 0px;
 	font-weight: bold;
 	text-align: left;
 	/* Left-align contact categories */
 }
 
-.contact-detail {
-	margin: 10px auto;
+.contact-detail-second {
+	text-align: left;
+	margin: 0px 0px 20px 0px;
+
+}
+
+.contact-detail-first {
+	margin: 20px 0px 0px 0px;
 	/* Center the contact details horizontally */
 	text-align: left;
 	/* Left-align contact details */
 	max-width: 300px;
 	/* Adjust the maximum width based on your design */
+}
+
+.anchor-contact {
+	color: #000;
 }
 
 /* Social icons styles */
@@ -277,14 +318,18 @@ body {
 
 /* Individual Social Icon */
 .social-icon {
-	margin: 0 10px;
-
-	/* Adjust the space between each social icon */
-	img {
-		width: 30px;
-		height: 30px;
-	}
+	fill: #000;
+	font-size: 28px;
+	padding-right: 12px;
 }
+
+.social-icon1 {
+	fill: #000;
+	font-size: 26px;
+}
+
+
+
 
 .footer {
 	display: flex;
