@@ -620,7 +620,7 @@ body {
   text-align: end;
 }
 
-@media screen and (min-width: 1024px) {
+@media screen and (min-width: 1025px) {
   .company-main {
     display: flex;
     flex-direction: row;
