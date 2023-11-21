@@ -606,6 +606,14 @@ body {
 	text-align: end;
 }
 
+@media screen and (min-width: 1024px) {
+	.company-main {
+		display: flex;
+		flex-direction: row;
+		justify-content: space-between;
+	}
+  }
+
 .footer-container {
 	display: flex;
 	flex-direction: row;
@@ -636,9 +644,11 @@ body {
 /* CSS for Image of Modern Building */
 .modern-building {
   width: 100%;
-  max-width: 1000px; /* Specify the maximum width with units */
+  max-width: 1000px;
+  /* Specify the maximum width with units */
   height: auto;
-  margin: 0 auto; /* Center the image horizontally */
+  margin: 0 auto;
+  /* Center the image horizontally */
   padding: 0;
   align-items: center;
 }
@@ -646,7 +656,8 @@ body {
 /* Media Query for Phones */
 @media only screen and (max-width: 600px) {
   .modern-building {
-    max-width: none; /* Remove max-width on small screens */
+    max-width: none;
+    /* Remove max-width on small screens */
     align-items: center;
   }
 }
@@ -657,15 +668,6 @@ body {
     height: auto;
     width: 14%;
   }
-/* CSS for info-company */
-.info-company {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  text-align: center; /* Center-align text within info-company by default */
-  padding: 12px;
-  margin-bottom: 20px; /* Adjust the margin as needed */
-  /* Media Query for Larger Screens */
 }
 /* CSS for info-company 
   .info-company {
@@ -676,9 +678,6 @@ body {
     flex-direction: column;
     height: auto;
     flex: 1 1 30%;
-    align-items: flex-start; /* Keep the text in the center but left-aligned on larger screens */
-    margin: 0 auto; /* Center align the entire section */
-    max-width: 600px; /* Limit the width for better readability, adjust as needed */
   }
 }
 @media (max-width: 600px) {
@@ -705,31 +704,39 @@ body {
 /* Contact section styles */
 .contact-section {
   padding: 20px;
-  text-align: center; /* Center align the contact section content horizontally */
+  text-align: center;
+  /* Center align the contact section content horizontally */
 }
 
 .contact-category {
   font-weight: bold;
-  text-align: left; /* Left-align contact categories */
+  text-align: left;
+  /* Left-align contact categories */
 }
 
 .contact-detail {
-  margin: 10px auto; /* Center the contact details horizontally */
-  text-align: left; /* Left-align contact details */
-  max-width: 300px; /* Adjust the maximum width based on your design */
+  margin: 10px auto;
+  /* Center the contact details horizontally */
+  text-align: left;
+  /* Left-align contact details */
+  max-width: 300px;
+  /* Adjust the maximum width based on your design */
 }
 
 /* Social icons styles */
 .social-icons {
   display: flex;
-  justify-content: left; /* Center the social icons horizontally */
-  align-items: left; /* Center the social icons vertically */
+  justify-content: left;
+  /* Center the social icons horizontally */
+  align-items: left;
+  /* Center the social icons vertically */
   margin-top: 20px;
 }
 
 /* Individual Social Icon */
 .social-icon {
-  margin: 0 10px; /* Adjust the space between each social icon */
+  margin: 0 10px;
+  /* Adjust the space between each social icon */
 }
 .social-icon img {
   width: 30px;
@@ -797,27 +804,10 @@ body {
   transition: transform 0.3s ease-out;
 }
 
-.map-link .map-image {
-  width: 100%;
-  height: auto;
 .footer-heading .icon2 {
   text-align: end;
   margin-left: 16px;
   transition: transform 0.3s ease-out;
-}
-
-/* Media query for iPhone */
-@media only screen and (max-width: 375px) {
-  .map-link .map-image {
-    /* Adjust the width for better readability on smaller screens */
-    max-width: 70%;
-    /* Optionally, add some padding or margin to improve spacing */
-    margin: 10px 0;
-  }
-  /* Center the section title on smaller screens */
-  .section-title {
-    text-align: center;
-  }
 }
 
 .footer-heading .icon3 {
@@ -854,12 +844,22 @@ body {
     display: none;
   }
 }
+.map-link .map-image {
+  width: 100%;
+  height: auto;
+}
 
-@media screen and (min-width: 1024px) {
-  .company-main {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
+/* Media query for iPhone */
+@media only screen and (max-width: 375px) {
+  .map-link .map-image {
+    /* Adjust the width for better readability on smaller screens */
+    max-width: 70%;
+    /* Optionally, add some padding or margin to improve spacing */
+    margin: 10px 0;
+  }
+  /* Center the section title on smaller screens */
+  .section-title {
+    text-align: center;
   }
 }
 

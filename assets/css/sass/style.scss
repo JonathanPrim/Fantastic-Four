@@ -177,20 +177,24 @@ body {
 /* CSS for Image of Modern Building */
 .modern-building {
 	width: 100%;
-	max-width: 1000px; /* Specify the maximum width with units */
+	max-width: 1000px;
+	/* Specify the maximum width with units */
 	height: auto;
-	margin: 0 auto; /* Center the image horizontally */
+	margin: 0 auto;
+	/* Center the image horizontally */
 	padding: 0;
 	align-items: center;
-  }
-  
-  /* Media Query for Phones */
-  @media only screen and (max-width: 600px) {
+}
+
+/* Media Query for Phones */
+@media only screen and (max-width: 600px) {
 	.modern-building {
-	  max-width: none; /* Remove max-width on small screens */
-	  align-items: center;
+		max-width: none;
+		/* Remove max-width on small screens */
+		align-items: center;
 	}
-	}
+}
+
 @media (min-width:1225px) {
 	.employee-text-wrap {
 		display: flex;
@@ -198,9 +202,9 @@ body {
 		height: auto;
 		width: 14%;
 	}
-  }
-  
-  /* CSS for info-company 
+}
+
+/* CSS for info-company 
   .info-company {
 }*/
 
@@ -238,166 +242,176 @@ body {
 }
 
 
-  /* Contact section styles */
-  .contact-section {
+/* Contact section styles */
+.contact-section {
 	padding: 20px;
-	text-align: center; /* Center align the contact section content horizontally */
-  }
-  
-  .contact-category {
+	text-align: center;
+	/* Center align the contact section content horizontally */
+}
+
+.contact-category {
 	font-weight: bold;
-	text-align: left; /* Left-align contact categories */
-  }
-  
-  .contact-detail {
-	margin: 10px auto; /* Center the contact details horizontally */
-	text-align: left; /* Left-align contact details */
-	max-width: 300px; /* Adjust the maximum width based on your design */
-  }
-  
-  /* Social icons styles */
-  .social-icons {
+	text-align: left;
+	/* Left-align contact categories */
+}
+
+.contact-detail {
+	margin: 10px auto;
+	/* Center the contact details horizontally */
+	text-align: left;
+	/* Left-align contact details */
+	max-width: 300px;
+	/* Adjust the maximum width based on your design */
+}
+
+/* Social icons styles */
+.social-icons {
 	display: flex;
-	justify-content: left; /* Center the social icons horizontally */
-	align-items: left; /* Center the social icons vertically */
+	justify-content: left;
+	/* Center the social icons horizontally */
+	align-items: left;
+	/* Center the social icons vertically */
 	margin-top: 20px;
-  }
-  
-  /* Individual Social Icon */
-  .social-icon {
-	margin: 0 10px; /* Adjust the space between each social icon */
+}
+
+/* Individual Social Icon */
+.social-icon {
+	margin: 0 10px;
+
+	/* Adjust the space between each social icon */
 	img {
-	  width: 30px;
-	  height: 30px;
+		width: 30px;
+		height: 30px;
 	}
 }
 
 .footer {
-  display: flex;
-  align-items: flex-start;
-  padding: 40px 7.5% 20px 7.5%;
-  background-color: #fff;
-  color: #000;
+	display: flex;
+	align-items: flex-start;
+	padding: 40px 7.5% 20px 7.5%;
+	background-color: #fff;
+	color: #000;
 
 }
- 
+
 .footer-home-page {
-  display: flex;
-  justify-content: space-between;
-  align-items: flex-start;
-  padding: 40px 1% 20px 1%;
-  background-color: #fff;
-  color: #000;
+	display: flex;
+	justify-content: space-between;
+	align-items: flex-start;
+	padding: 40px 1% 20px 1%;
+	background-color: #fff;
+	color: #000;
 }
- 
+
 .footer-container {
-  display: flex;
-  flex-direction: column;
-  width: 80%;
+	display: flex;
+	flex-direction: column;
+	width: 80%;
 }
 
 /* Evolve 21px to 20px underneath*/
 .footer-content {
-  margin-bottom: 21px;
-  /* Adjust as needed */
-  overflow: hidden;
-  /* Hide content overflow */
-  transition: max-height 1s ease-out;
-  /* Add smooth transition */
+	margin-bottom: 21px;
+	/* Adjust as needed */
+	overflow: hidden;
+	/* Hide content overflow */
+	transition: max-height 1s ease-out;
+	/* Add smooth transition */
 }
- 
+
 .footer-heading {
-  font-size: 14px;
-  cursor: pointer;
-  margin: 0;
-  /* Remove default margin */
+	font-size: 14px;
+	cursor: pointer;
+	margin: 0;
+	/* Remove default margin */
 }
- 
+
 .accordion-content {
-  display: none;
-  margin-top: 5px;
-  /* Adjust as needed */
+	display: none;
+	margin-top: 5px;
+	/* Adjust as needed */
 }
- 
+
 .accordion-content.show {
-  display: block;
+	display: block;
 }
- 
+
 .copyright {
-  text-align: center;
-  margin-top: 0px
-    /* Adjust as needed */
+	text-align: center;
+	margin-top: 0px
+		/* Adjust as needed */
 }
- 
+
 .footer-heading .icon1 {
-  text-align: end;
-  margin-left: 24px;
-  transition: transform 0.3s ease-out;
+	text-align: end;
+	margin-left: 24px;
+	transition: transform 0.3s ease-out;
 }
- 
+
 .footer-heading .icon2 {
-  text-align: end;
-  margin-left: 16px;
-  transition: transform 0.3s ease-out;
+	text-align: end;
+	margin-left: 16px;
+	transition: transform 0.3s ease-out;
 }
- 
+
 .footer-heading .icon3 {
-  text-align: end;
-  margin-left: 28px;
-  transition: transform 0.3s ease-out;
+	text-align: end;
+	margin-left: 28px;
+	transition: transform 0.3s ease-out;
 }
- 
+
 /* Rotate the chevron icon when the content is shown */
 .footer-heading.show i {
-  transform: rotate(180deg);
+	transform: rotate(180deg);
 }
- 
+
 @media screen and (min-width: 1024px) {
-  .footer {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-  }
- 
-  .footer-container {
-    width: 55%;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-  }
- 
-  .footer-content {
-    display: flex;
-    flex-direction: column;
-  }
- 
-  .accordion-content {
-    display: block;
-  }
-  
-  .map-link .map-image {
+	.footer {
+		display: flex;
+		flex-direction: row;
+		justify-content: space-between;
+	}
+
+	.footer-container {
+		width: 55%;
+		display: flex;
+		flex-direction: row;
+		justify-content: space-between;
+	}
+
+	.footer-content {
+		display: flex;
+		flex-direction: column;
+	}
+
+	.accordion-content {
+		display: block;
+	}
+
+	.footer-heading {
+		i {
+			display: none;
+		}
+	}
+}
+
+.map-link .map-image {
 	width: 100%;
 	height: auto;
- 
-  .footer-heading {
-    i {
-      display: none;
-    }
-  }
-  
-  /* Media query for iPhone */
+}
+
+/* Media query for iPhone */
 @media only screen and (max-width: 375px) {
 	.map-link .map-image {
-	  /* Adjust the width for better readability on smaller screens */
-	  max-width: 70%;
-	  
-	  /* Optionally, add some padding or margin to improve spacing */
-	  margin: 10px 0;
+		/* Adjust the width for better readability on smaller screens */
+		max-width: 70%;
+
+		/* Optionally, add some padding or margin to improve spacing */
+		margin: 10px 0;
 	}
-  
+
 	/* Center the section title on smaller screens */
 	.section-title {
-	  text-align: center;
+		text-align: center;
 	}
-  }
 }
