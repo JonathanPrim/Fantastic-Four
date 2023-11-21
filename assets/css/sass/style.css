@@ -561,15 +561,16 @@ body {
 }
 
 .ourstory {
-  padding: 12px;
+  padding: 40px 7.5% 20px 7.5%;
 }
 
 .info-company {
+  padding: 40px 7.5% 20px 7.5%;
   display: flex;
   flex-direction: column;
+  justify-content: space-between;
   text-align: center;
   align-items: center;
-  width: 100%;
 }
 
 @media screen and (min-width: 1024px) {
@@ -689,13 +690,46 @@ body {
     gap: 15px;
   }
 }
+/* Contact section styles */
+.contact-section {
+  padding: 20px;
+  text-align: center; /* Center align the contact section content horizontally */
+}
+
+.contact-category {
+  font-weight: bold;
+  text-align: left; /* Left-align contact categories */
+}
+
+.contact-detail {
+  margin: 10px auto; /* Center the contact details horizontally */
+  text-align: left; /* Left-align contact details */
+  max-width: 300px; /* Adjust the maximum width based on your design */
+}
+
+/* Social icons styles */
+.social-icons {
+  display: flex;
+  justify-content: center; /* Center the social icons horizontally */
+  align-items: center; /* Center the social icons vertically */
+  margin-top: 20px;
+}
+
+/* Individual Social Icon */
+.social-icon {
+  margin: 0 10px; /* Adjust the space between each social icon */
+}
+.social-icon img {
+  width: 30px;
+  height: 30px;
+}
+
 .footer {
   display: flex;
   align-items: flex-start;
   padding: 40px 7.5% 20px 7.5%;
   background-color: #fff;
   color: #000;
-  /* Adjust as needed */
 }
 
 .footer-home-page {
@@ -710,17 +744,8 @@ body {
 .footer-container {
   display: flex;
   flex-direction: column;
-  align-items: center;
-  text-align: center; /* Center-align text within info-company by default */
-  padding: 12px;
-  margin-bottom: 20px; /* Adjust the margin as needed */
+  width: 80%;
 }
-
-/*@media only screen and (min-width: 1024px) {
-	  align-items: flex-start;
-	  max-width: 600px;
-	  width: 80%;
-}/*
 
 /* Evolve 21px to 20px underneath*/
 .footer-content {
@@ -799,59 +824,6 @@ body {
   .footer-heading i {
     display: none;
   }
-}
-/* Contact section styles */
-.contact-section {
-  padding: 20px;
-  text-align: center; /* Center align the contact section content horizontally */
-}
-
-.contact-category {
-  font-weight: bold;
-  text-align: left; /* Left-align contact categories */
-}
-
-.contact-detail {
-  margin: 10px auto; /* Center the contact details horizontally */
-  text-align: left; /* Left-align contact details */
-  max-width: 300px; /* Adjust the maximum width based on your design */
-}
-
-/* Social icons styles */
-.social-icons {
-  display: flex;
-  justify-content: center; /* Center the social icons horizontally */
-  align-items: center; /* Center the social icons vertically */
-  margin-top: 20px;
-}
-
-/* Individual Social Icon */
-.social-icon {
-  margin: 0 10px; /* Adjust the space between each social icon */
-}
-.social-icon img {
-  width: 30px;
-  height: 30px;
-}
-
-.footer-container {
-  width: 55%;
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-}
-
-.footer-content {
-  display: flex;
-  flex-direction: column;
-}
-
-.accordion-content {
-  display: block;
-}
-
-.footer-heading i {
-  display: none;
 }
 
 /*# sourceMappingURL=style.css.map */
