@@ -107,15 +107,16 @@ body {
 	}
 }
 
-/*.team-image {
+.team-image {
 		width: calc(50%-15%);
-	} */
+	} 
 
-/*.space {
+.space {
 		padding-bottom: 15px;
-	}*/
+	}
 
-/* try accordion feature on mobile.footer-heading {
+/* try accordion feature on mobile */
+.footer-heading {
 	text-align: start;
 	font-size: 12px;
 	margin: 0px 0px 10px 0px;
@@ -149,7 +150,7 @@ body {
 	flex-direction: row;
 	justify-content: space-between;
 	width: 100%;
-}*/
+}
 
 .wrapper {
 	padding: 20px 7.5% 20px 7.5%;
