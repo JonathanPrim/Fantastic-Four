@@ -258,8 +258,8 @@ body {
   /* Social icons styles */
   .social-icons {
 	display: flex;
-	justify-content: center; /* Center the social icons horizontally */
-	align-items: center; /* Center the social icons vertically */
+	justify-content: left; /* Center the social icons horizontally */
+	align-items: left; /* Center the social icons vertically */
 	margin-top: 20px;
   }
   
@@ -374,10 +374,30 @@ body {
   .accordion-content {
     display: block;
   }
+  
+  .map-link .map-image {
+	width: 100%;
+	height: auto;
  
   .footer-heading {
     i {
       display: none;
     }
+  }
+  
+  /* Media query for iPhone */
+@media only screen and (max-width: 375px) {
+	.map-link .map-image {
+	  /* Adjust the width for better readability on smaller screens */
+	  max-width: 70%;
+	  
+	  /* Optionally, add some padding or margin to improve spacing */
+	  margin: 10px 0;
+	}
+  
+	/* Center the section title on smaller screens */
+	.section-title {
+	  text-align: center;
+	}
   }
 }
