@@ -821,8 +821,13 @@ body {
   transform: rotate(180deg);
 }
 
+<<<<<<< HEAD
 @media screen and (min-width: 1024px) {
   .footer {
+=======
+@media screen and (min-width: 1025px) {
+  .company-main {
+>>>>>>> Mimmis-branch
     display: flex;
     flex-direction: row;
     justify-content: space-between;
