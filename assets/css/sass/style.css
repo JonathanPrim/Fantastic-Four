@@ -1,19 +1,303 @@
-/* Error: expected "}".
- *     ,
- * 379 | }
- *     |  ^
- *     '
- *   style.scss 379:2  root stylesheet */
+@charset "UTF-8";
+/*
+Name: Google News SASS
+Version: 1.0
+*/
+/*COLORS*/
+/*Colors SASS file*/
+/*! MIXIN  */
+/*Transitions*/
+@-webkit-keyframes moveUp {
+  100% {
+    -webkit-transform: translateY(0);
+    opacity: 1;
+  }
+}
+@keyframes moveUp {
+  100% {
+    -webkit-transform: translateY(0);
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+/*Moving up fade in animation*/
+.moveUp {
+  opacity: 0;
+  -webkit-transform: translateY(200px); /*Taken from mixin.scss*/
+  transform: translateY(200px); /*Taken from mixin.scss*/
+  -moz-transform: translateY(200px); /*Taken from mixin.scss*/
+  -moz-animation: moveUp 1s ease forwards; /*Taken from mixin.scss*/
+  -webkit-animation: moveUp 1s ease forwards; /*Taken from mixin.scss*/
+  animation: moveUp 1s ease forwards; /*Taken from mixin.scss*/
+}
 
-body::before {
-  font-family: "Source Code Pro", "SF Mono", Monaco, Inconsolata, "Fira Mono",
-      "Droid Sans Mono", monospace, monospace;
-  white-space: pre;
+/*Buttons*/
+.btn {
+  float: right;
+  position: relative;
+  padding: 10px;
+  width: auto;
+  border-radius: 9px;
+  cursor: pointer;
+  overflow: hidden;
+  box-sizing: border-box;
+  background: #2a5db0;
+  font-weight: bold;
+  color: white !important;
+  -webkit-transition: all 0.3s;
+  -moz-transition: all 0.3s;
+  -ms-transition: all 0.3s;
+  -o-transition: all 0.3s;
+  transition: all 0.3s;
+  /*Taken from mixin.scss*/
+}
+.btn:hover {
+  padding-right: 30px;
+  background: #16315e;
+}
+.btn:before {
+  content: "→";
+  position: absolute;
+  height: 100%;
+  font-size: 125%;
+  line-height: 2;
+  color: #fff;
+  -webkit-transition: all 0.3s;
+  -moz-transition: all 0.3s;
+  transition: all 0.3s;
+  right: -20px;
+  top: 0;
+  opacity: 0;
+}
+.btn:hover:before {
+  right: 8px;
+  opacity: 1;
+}
+
+/*Mixin SASS file*/
+/*! TYPOGRAPHY  */
+/* --- Convert percent font sizes to em ---*/
+html, .paragraph, li, p {
+  font-family: "Open Sans", sans-serif;
+  font-weight: normal;
+  margin-top: 10px;
+  font-size: 15px;
+  font-size: 0.9375rem;
+  line-height: 20px;
+  line-height: 1.25rem;
+  color: black;
+}
+html strong, html b, .paragraph strong, li strong, .paragraph b, li b, p strong, p b {
+  font-weight: bold;
+}
+
+strong, b {
+  font-weight: bold;
+}
+
+i, em {
+  font-style: italic;
+}
+
+ul {
+  list-style-type: none;
+  list-style-image: none;
+}
+
+li {
+  list-style-type: none;
+  list-style-image: none;
+  margin-top: 5px;
+}
+
+h1 {
+  font-family: "Open Sans", sans-serif;
+  font-weight: bold;
+  font-size: 30px;
+  font-size: 1.875rem;
+  line-height: 35px;
+  line-height: 2.1875rem;
+}
+
+h2 {
+  font-family: "Playfair Display", serif;
+  font-weight: normal;
+  font-size: 20px;
+  font-size: 1.25rem;
+  line-height: 25px;
+  line-height: 1.5625rem;
+}
+
+/*------LINKS-----*/
+a {
+  color: #2a5db0;
+  text-decoration: none;
+  -webkit-transition: 0.5s;
+  -moz-transition: 0.5s;
+  -ms-transition: 0.5s;
+  -o-transition: 0.5s;
+  transition: 0.5s;
+  /*Taken fomr mixin.scss*/
+  cursor: pointer;
+}
+a:hover, a:active, a:visited {
+  color: #16315e;
+  text-decoration: none;
+}
+
+/*Fonts SASS file*/
+/*! HEADER STYLES */
+#header {
+  width: 110%;
+  height: 130px;
+  overflow: hidden;
+  background: white;
   display: block;
-  padding: 1em;
-  margin-bottom: 1em;
-  border-bottom: 2px solid black;
-  content: 'Error: expected "}".\a     \2577 \a 379 \2502  }\a     \2502   ^\a     \2575 \a   style.scss 379:2  root stylesheet';
+  margin-left: -5%;
+  padding-top: 10px;
+  /*Breakpoint for when menu can't fit the screen anymore*/
+  /*#header h1*/
+  /*Close nav#menu*/
+}
+@media screen and (max-width: 1190px) {
+  #header {
+    padding: 2%;
+    box-sizing: border-box;
+    height: auto;
+    position: relative;
+  }
+}
+#header h1 {
+  vertical-align: middle;
+  display: inline-block;
+  padding: 0 5%;
+  font-size: 35px;
+  font-size: 2.1875rem;
+  line-height: 40px;
+  line-height: 2.5rem;
+  margin-bottom: 5px;
+}
+#header nav#menu {
+  display: block;
+  width: 90%;
+  border-bottom: 1px solid #CCC;
+  border-top: 1px solid #CCC;
+  padding-left: 5%;
+  padding-right: 5%;
+  /*Breakpoint for when menu can't fit the screen anymore*/
+  /*Close @media screen and (max-width: 1190px)*/
+  /*Close ul*/
+}
+@media screen and (max-width: 1190px) {
+  #header nav#menu {
+    min-width: auto;
+    max-height: 0px;
+    -webkit-transition: 1s;
+    -moz-transition: 1s;
+    -ms-transition: 1s;
+    -o-transition: 1s;
+    transition: 1s;
+    /*Taken fomr mixin.scss*/
+    /*Open menu*/
+  }
+  #header nav#menu li {
+    display: none !important;
+  }
+  #header nav#menu.responsive {
+    width: 100%;
+    max-height: 1000px;
+    -webkit-transition: 1s;
+    -moz-transition: 1s;
+    -ms-transition: 1s;
+    -o-transition: 1s;
+    transition: 1s;
+    /*Taken fomr mixin.scss*/
+  }
+  #header nav#menu.responsive li:not(:last-child) {
+    float: none;
+    display: block !important;
+    text-align: left;
+    padding: 1% 0;
+    border-top: 1px solid #CCC;
+    margin: 0;
+    margin-left: -5%;
+    padding-left: 5%;
+  }
+  #header nav#menu.responsive li:first-child {
+    border-top: 0;
+  }
+  #header nav#menu.responsive li a.current {
+    padding-bottom: 6px;
+  }
+}
+#header nav#menu ul {
+  display: block;
+  /*Close li*/
+}
+#header nav#menu ul li {
+  display: inline-block;
+  vertical-align: middle;
+  font-weight: bold;
+  margin: 0 1%;
+  font-family: "Playfair Display", serif;
+  font-size: 20px;
+  font-size: 1.25rem;
+  line-height: 25px;
+  line-height: 1.5625rem;
+  /*Breakpoint for when menu can't fit the screen anymore*/
+  /*@media screen and (max-width: 1190px)*/
+}
+#header nav#menu ul li:first-child {
+  margin-left: 0;
+}
+#header nav#menu ul li a.current {
+  color: #16315e;
+  border-bottom: 3px solid #16315e;
+  padding-bottom: 16px;
+}
+#header nav#menu ul li.icon {
+  display: none;
+}
+#header nav#menu ul li.search input#searchInput {
+  background-image: url("../searchicon.png");
+  background-position: 7px 10px;
+  background-repeat: no-repeat;
+  width: 160px;
+  background-size: 15px auto;
+  box-sizing: border-box;
+  padding: 5px 5px 5px 30px;
+  border: 1px solid #CCC;
+  margin: 12px 0;
+  box-shadow: 0 0 0 transparent;
+  font-family: "Playfair Display", serif;
+  font-size: 20px;
+  font-size: 1.25rem;
+  line-height: 25px;
+  line-height: 1.5625rem;
+}
+#header nav#menu ul li.search input#searchInput:focus {
+  box-shadow: 0 0 5px #2a5db0;
+  -webkit-transition: 0.3s;
+  -moz-transition: 0.3s;
+  -ms-transition: 0.3s;
+  -o-transition: 0.3s;
+  transition: 0.3s;
+}
+@media screen and (max-width: 1190px) {
+  #header nav#menu ul li.icon {
+    display: inline-block !important;
+    position: absolute;
+    right: 5%;
+    top: 30px;
+  }
+  #header nav#menu ul li.icon a {
+    font-size: 20px;
+  }
+}
+@media (max-width: 870px) {
+  #header nav#menu ul li.icon {
+    top: 15px;
+  }
 }
 
 /*Close #header*/
@@ -348,6 +632,23 @@ body {
   padding-bottom: 2.5%;
 }
 
+/* CSS for Image of Modern Building */
+.modern-building {
+  width: 100%;
+  max-width: 1000px; /* Specify the maximum width with units */
+  height: auto;
+  margin: 0 auto; /* Center the image horizontally */
+  padding: 0;
+  align-items: center;
+}
+
+/* Media Query for Phones */
+@media only screen and (max-width: 600px) {
+  .modern-building {
+    max-width: none; /* Remove max-width on small screens */
+    align-items: center;
+  }
+}
 @media (min-width: 1225px) {
   .employee-text-wrap {
     display: flex;
@@ -356,6 +657,9 @@ body {
     width: 14%;
   }
 }
+/* CSS for info-company 
+  .info-company {
+}*/
 @media (max-width: 1224px) {
   .employee-text-wrap {
     display: flex;
@@ -406,8 +710,17 @@ body {
 .footer-container {
   display: flex;
   flex-direction: column;
-  width: 80%;
+  align-items: center;
+  text-align: center; /* Center-align text within info-company by default */
+  padding: 12px;
+  margin-bottom: 20px; /* Adjust the margin as needed */
 }
+
+/*@media only screen and (min-width: 1024px) {
+	  align-items: flex-start;
+	  max-width: 600px;
+	  width: 80%;
+}/*
 
 /* Evolve 21px to 20px underneath*/
 .footer-content {
@@ -486,6 +799,59 @@ body {
   .footer-heading i {
     display: none;
   }
+}
+/* Contact section styles */
+.contact-section {
+  padding: 20px;
+  text-align: center; /* Center align the contact section content horizontally */
+}
+
+.contact-category {
+  font-weight: bold;
+  text-align: left; /* Left-align contact categories */
+}
+
+.contact-detail {
+  margin: 10px auto; /* Center the contact details horizontally */
+  text-align: left; /* Left-align contact details */
+  max-width: 300px; /* Adjust the maximum width based on your design */
+}
+
+/* Social icons styles */
+.social-icons {
+  display: flex;
+  justify-content: center; /* Center the social icons horizontally */
+  align-items: center; /* Center the social icons vertically */
+  margin-top: 20px;
+}
+
+/* Individual Social Icon */
+.social-icon {
+  margin: 0 10px; /* Adjust the space between each social icon */
+}
+.social-icon img {
+  width: 30px;
+  height: 30px;
+}
+
+.footer-container {
+  width: 55%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.footer-content {
+  display: flex;
+  flex-direction: column;
+}
+
+.accordion-content {
+  display: block;
+}
+
+.footer-heading i {
+  display: none;
 }
 
 /*# sourceMappingURL=style.css.map */

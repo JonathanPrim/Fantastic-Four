@@ -180,6 +180,8 @@ body {
 	.modern-building {
 	  max-width: none; /* Remove max-width on small screens */
 	  align-items: center;
+	}
+	}
 @media (min-width:1225px) {
 	.employee-text-wrap {
 		display: flex;
@@ -189,9 +191,9 @@ body {
 	}
   }
   
-  /* CSS for info-company */
+  /* CSS for info-company 
   .info-company {
-}
+}*/
 
 @media (max-width:1224px) {
 	.employee-text-wrap {
@@ -251,14 +253,12 @@ body {
 	text-align: center; /* Center-align text within info-company by default */
 	padding: 12px;
 	margin-bottom: 20px; /* Adjust the margin as needed */
-  
-	/* Media Query for Larger Screens */
-	@media only screen and (min-width: 1024px) {
-	  align-items: flex-start; /* Keep the text in the center but left-aligned on larger screens */
-	  margin: 0 auto; /* Center align the entire section */
-	  max-width: 600px; /* Limit the width for better readability, adjust as needed */
-	width: 80%;
 }
+	/*@media only screen and (min-width: 1024px) {
+	  align-items: flex-start;
+	  max-width: 600px;
+	  width: 80%;
+}/*
 
 /* Evolve 21px to 20px underneath*/
 .footer-content {
@@ -318,9 +318,31 @@ body {
 
 @media screen and (min-width: 1024px) {
 	.footer {
-		display: flex;
-		flex-direction: row;
-		justify-content: space-between;
+	  display: flex;
+	  flex-direction: row;
+	  justify-content: space-between;
+	}
+   
+	.footer-container {
+	  width: 55%;
+	  display: flex;
+	  flex-direction: row;
+	  justify-content: space-between;
+	}
+   
+	.footer-content {
+	  display: flex;
+	  flex-direction: column;
+	}
+   
+	.accordion-content {
+	  display: block;
+	}
+   
+	.footer-heading {
+	  i {
+		display: none;
+	  }
 	}
   }
   
@@ -355,6 +377,8 @@ body {
 	img {
 	  width: 30px;
 	  height: 30px;
+	}
+}
 
 	.footer-container {
 		width: 55%;
@@ -377,4 +401,3 @@ body {
 			display: none;
 		}
 	}
-}
