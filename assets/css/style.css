@@ -584,6 +584,14 @@ body {
   padding: 12px;
 }
 
+
+@media screen and (min-width: 1024px) {
+  .info-company {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+}
+
 .info-company {
   display: flex;
   flex-direction: column;
@@ -592,12 +600,6 @@ body {
   width: 100%;
 }
 
-@media screen and (min-width: 1024px) {
-  .info-company {
-    flex-direction: row;
-    justify-content: space-between;
-  }
-}
 .space {
   padding-bottom: 15px;
 }
