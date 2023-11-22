@@ -572,6 +572,15 @@ body {
   width: 100%;
 }
 
+.info-headings {
+  font-size: 25px;
+  font-weight: 100;
+}
+
+.our-story-heading {
+  font-size: 19px;
+}
+
 .ourstory {
   padding: 40px 0px 20px 0px;
 }
@@ -588,6 +597,7 @@ body {
 @media screen and (min-width: 1024px) {
   .info-company {
     flex-direction: row;
+    text-align: left;
     justify-content: space-between;
   }
 }
