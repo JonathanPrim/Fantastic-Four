@@ -1,13 +1,15 @@
 /*! HEADER STYLES */
 
 #header {
-  width: 110%;
-  height: 130px;
+  width: 112%;
+  height: 160px;
   overflow: hidden;
   background: white;
   display: block;
   margin-left: -5%;
   padding-top: 10px;
+
+
 
   /*Breakpoint for when menu can't fit the screen anymore*/
   @media screen and (max-width: 1190px) {
@@ -20,7 +22,7 @@
   /*#header h1*/
   h1 {
     vertical-align: middle;
-    display: inline-block;
+    display:inline-block;
     padding: 0 5%;
     @include size(35, 40);
     margin-bottom: 5px;
@@ -38,8 +40,7 @@
     @media screen and (max-width: 1190px) {
       min-width: auto;
       max-height: 0px;
-      @include transition(1s);
-      /*Taken fomr mixin.scss*/
+      @include transition(1s); /*Taken fomr mixin.scss*/
 
       li {
         display: none !important;
@@ -49,8 +50,7 @@
       &.responsive {
         width: 100%;
         max-height: 1000px;
-        @include transition(1s);
-        /*Taken fomr mixin.scss*/
+        @include transition(1s); /*Taken fomr mixin.scss*/
 
         li {
 
@@ -74,12 +74,12 @@
           }
         }
       }
-    }
-
-    /*Close @media screen and (max-width: 1190px)*/
+    }/*Close @media screen and (max-width: 1190px)*/
 
     ul {
-      display: block;
+      display:block;
+      margin: 0;
+      padding: 0;
 
       li {
         display: inline-block;
@@ -94,7 +94,7 @@
         }
 
         a.current {
-          color: $link-hover;
+          color:$link-hover;
           border-bottom: 3px solid $link-hover;
           padding-bottom: 16px;
         }
@@ -132,28 +132,24 @@
             top: 30px;
 
             a {
-              font-size: 20px;
+              font-size:20px;
             }
           }
-        }
-
-        /*@media screen and (max-width: 1190px)*/
+        }/*@media screen and (max-width: 1190px)*/
 
         // Smartphones
         @media (max-width : 870px) {
-          &.icon {
-            top: 15px;
-          }
+         &.icon {
+           top:15px;
+         }
         }
-      }
+      }/*Close li*/
+    } /*Close ul*/
+  } /*Close nav#menu*/
+} /*Close #header*/
 
-      /*Close li*/
-    }
-
-    /*Close ul*/
+@media screen and (max-width: 1024px) {
+  #header {
+    width: 107%;
   }
-
-  /*Close nav#menu*/
 }
-
-/*Close #header*/
