@@ -36,7 +36,7 @@ h4 {
 }
 
 body {
-	width: 90%;
+	width: 100%;
 	overflow-x: hidden;
 	display: block;
 	clear: both;
@@ -91,23 +91,16 @@ body {
 
 
 .ourstory {
-	padding: 40px 7.5% 20px 7.5%;
+	padding: 40px 5% 20px 5%;
 }
 
 .info-company {
-	padding: 40px 7.5% 20px 7.5%;
+	padding: 40px 5% 20px 5%;
 	display: flex;
 	flex-direction: column;
 	justify-content: space-between;
 	text-align: center;
 	align-items: center;
-}
-
-@media screen and (min-width: 1024px) {
-	.info-company {
-		flex-direction: row;
-		justify-content: space-between;
-	}
 }
 
 // .team-image {
@@ -138,14 +131,6 @@ body {
 	flex-direction: row;
 	justify-content: space-between;
 	text-align: end;
-}
-
-@media screen and (min-width: 1025px) {
-	.company-main {
-		display: flex;
-		flex-direction: row;
-		justify-content: space-between;
-	}
 }
 
 .footer-container {
@@ -191,70 +176,6 @@ body {
 	align-items: center;
 }
 
-/* Media Query for Phones */
-@media only screen and (max-width: 600px) {
-	.modern-building {
-		max-width: none;
-		/* Remove max-width on small screens */
-		align-items: center;
-	}
-}
-
-@media (min-width:1225px) {
-	.employee-text-wrap {
-		display: flex;
-		flex-direction: column;
-		height: auto;
-		width: 14%;
-	}
-}
-
-/* CSS for info-company 
-  .info-company {
-}*/
-
-@media (max-width:1224px) {
-	.employee-text-wrap {
-		display: flex;
-		flex-direction: column;
-		height: auto;
-		flex: 1 1 30%;
-	}
-}
-
-@media (max-width:600px) {
-	.employee-text-wrap {
-		display: flex;
-		flex-direction: column;
-		height: auto;
-		flex: 1 1 45%;
-	}
-}
-
-@media (max-width:374px) {
-	.employee-text-wrap {
-		display: flex;
-		flex-direction: column;
-		height: auto;
-		flex: 1 1 50%;
-	}
-}
-
-@media (max-width:900px) {
-	.employee-wrap {
-		gap: 15px;
-	}
-}
-
-
-@media screen and (min-width:1024px) {
-	.section-title {
-		text-align: left;
-		font-size: 25px;
-		padding-top: 35px;
-		padding-bottom: 22px;
-	}
-}
 
 .contact-container {
 	display: flex;
@@ -270,19 +191,8 @@ body {
 	/* Center align the contact section content horizontally */
 }
 
-@media screen and (max-width:430px) {
-	.company-main {
-		display: flex;
-		flex-direction: column;
-		align-items: flex-start;
-	}
-
-	.info-contact {
-		display: flex;
-		flex-direction: column;
-		align-items: flex-start;
-	}
-
+.map-section {
+	padding: 20px 7.5% 20px 7.5%;
 }
 
 .contact-category {
@@ -334,7 +244,7 @@ body {
 }
 
 
-
+/* FOOTER CONTENT */
 
 .footer {
 	display: flex;
@@ -416,6 +326,28 @@ body {
 	transform: rotate(180deg);
 }
 
+
+
+
+/* MEDIA QUERIES */
+
+@media only screen and (min-width: 375px) {
+	.map-link .map-image {
+		/* Adjust the width for better readability on smaller screens */
+		max-width: 70%;
+
+		/* Optionally, add some padding or margin to improve spacing */
+		margin: 10px 0;
+	}
+
+	/* Center the section title on smaller screens */
+	.section-title {
+		text-align: left;
+		font-size: 25px;
+		padding-top: 50px;
+	}
+}
+
 @media screen and (min-width: 1024px) {
 	.footer {
 		display: flex;
@@ -451,20 +383,96 @@ body {
 	height: auto;
 }
 
-/* Media query for iPhone */
-@media only screen and (max-width: 375px) {
-	.map-link .map-image {
-		/* Adjust the width for better readability on smaller screens */
-		max-width: 70%;
-
-		/* Optionally, add some padding or margin to improve spacing */
-		margin: 10px 0;
+@media screen and (max-width:430px) {
+	.company-main {
+		display: flex;
+		flex-direction: column;
+		align-items: flex-start;
 	}
 
-	/* Center the section title on smaller screens */
+	.info-contact {
+		display: flex;
+		flex-direction: column;
+		align-items: flex-start;
+	}
+
+}
+
+@media (max-width:1224px) {
+	.employee-text-wrap {
+		display: flex;
+		flex-direction: column;
+		height: auto;
+		flex: 1 1 30%;
+	}
+}
+
+@media (max-width:600px) {
+	.employee-text-wrap {
+		display: flex;
+		flex-direction: column;
+		height: auto;
+		flex: 1 1 45%;
+	}
+}
+
+@media (max-width:374px) {
+	.employee-text-wrap {
+		display: flex;
+		flex-direction: column;
+		height: auto;
+		flex: 1 1 50%;
+	}
+}
+
+@media (max-width:900px) {
+	.employee-wrap {
+		gap: 15px;
+	}
+}
+
+
+@media screen and (min-width:1024px) {
 	.section-title {
-		text-align: center;
+		text-align: left;
 		font-size: 25px;
-		padding-top: 50px;
+		padding-top: 35px;
+		padding-bottom: 35px;
+	}
+
+	.map-section {
+		padding: 40px 7.5% 20px 7.5%;
+	}
+}
+
+@media only screen and (max-width: 600px) {
+	.modern-building {
+		max-width: none;
+		/* Remove max-width on small screens */
+		align-items: center;
+	}
+}
+
+@media (min-width:1225px) {
+	.employee-text-wrap {
+		display: flex;
+		flex-direction: column;
+		height: auto;
+		width: 14%;
+	}
+}
+
+@media screen and (min-width: 1025px) {
+	.company-main {
+		display: flex;
+		flex-direction: row;
+		justify-content: space-between;
+	}
+}
+
+@media screen and (min-width: 1024px) {
+	.info-company {
+		flex-direction: row;
+		justify-content: space-between;
 	}
 }
