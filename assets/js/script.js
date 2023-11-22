@@ -23,3 +23,23 @@ document.addEventListener("DOMContentLoaded", function () {
     });
   });
 });
+
+document.addEventListener('DOMContentLoaded', function () {
+  const ourStorySection = document.querySelector('.ourstory');
+
+  // Set up the Intersection Observer
+  const observer = new IntersectionObserver((entries, observer) => {
+    entries.forEach((entry) => {
+      if (entry.isIntersecting) {
+        // Add a class to trigger the slide-in animation
+        ourStorySection.classList.add('slide-in-from-left');
+
+        // Stop observing once animation is applied
+        observer.unobserve(entry.target);
+      }
+    });
+  });
+
+  // Start observing the ourstory section
+  observer.observe(ourStorySection);
+});
