@@ -627,6 +627,7 @@ body {
   padding-top: 11px;
 }
 .wrapper h3 {
+  font-size: 19px;
   margin: 0;
   padding-top: 50px;
   padding-bottom: 20px;
@@ -703,6 +704,9 @@ body {
 @media screen and (min-width: 1024px) {
   .section-title {
     text-align: left;
+    font-size: 25px;
+    padding-top: 35px;
+    padding-bottom: 22px;
   }
 }
 .contact-container {
@@ -895,6 +899,8 @@ body {
   /* Center the section title on smaller screens */
   .section-title {
     text-align: center;
+    font-size: 25px;
+    padding-top: 50px;
   }
 }
 
