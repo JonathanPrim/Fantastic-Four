@@ -173,6 +173,7 @@ body {
 .wrapper {
 	padding: 40px 0px 20px 0px;
 	display: flex;
+	flex-direction: column;
 	flex-wrap: wrap;
 
 	h4 {
@@ -236,6 +237,7 @@ body {
 		flex-direction: column;
 		height: auto;
 		flex: 1 1 30%;
+		margin-bottom: 200px;
 	}
 }
 
@@ -406,8 +408,9 @@ body {
 
 .copyright {
 	text-align: center;
-	margin-top: 0px
-		/* Adjust as needed */
+	margin-top: 0px;
+	padding-top: 40px;
+	/* Adjust as needed */
 }
 
 .footer-heading .icon1 {
@@ -438,6 +441,7 @@ body {
 		display: flex;
 		flex-direction: row;
 		justify-content: space-between;
+
 	}
 
 	.footer-container {
@@ -445,6 +449,7 @@ body {
 		display: flex;
 		flex-direction: row;
 		justify-content: space-between;
+		padding-top: 40px;
 	}
 
 	.footer-content {
